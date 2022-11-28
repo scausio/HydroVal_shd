@@ -36,14 +36,17 @@ bproject: Project queue on Zeus where your job should be submitted
 Using T and F flag you can select your jobs
 
 argo_profiles: T
+
 Validation vs argo putting all the expsName in one plot. One plot per year per variable, and a cumulative plot for all the years
-![](pics/bs-test-int-n4.0-bs-test-int-bdy7/allYears_Domain_Salinity.png)
+![](pics/allYears_Domain_Salinity.png)
 
 argo_errorEvolution: T
+
 Validation vs argo putting one expsName in one plot, with 1 profile RMSE per year.
 ![](pics/errorEvolution_bs-test-int-bdy7_salinity_2016-2019.png)
 
 sst: T
+
 Validation of SST vs satellite data
 Production of a timeseries from *fromYear* to *toYear*.The plot includes monthly mean and daily mean 
 ![](pics/2016-2018_ts.png)
@@ -52,34 +55,41 @@ and bias-rmse map per each expName
 if expNames is a list of 2 experiments, the tool produces also a map of rmse difference among them
 
 sla: T
-Validation of SLA vs satellite data
+
+Validation of SLA vs satellite data.
 The tool produces one timeseries per year with all the experiments, and a cumulative timeseries from *fromYear* to *toYear* 
 ![](pics/sla_rmse_2016-2018.png)
 
 hovmoller: T
-Hovmoller diagram from *fromYear* to *toYear* per experiment, per variable. You can decide to discard shallow waters setting a minimum depth
+
+Hovmoller diagram from *fromYear* to *toYear* per experiment, per variable. You can decide to discard shallow points setting a minimum depth
 ![](.pics/hov_domain_salinity.png)
 
 anomalies:
+
 The mean climatology is computed from *fromYear* to *toYear* 
 hovmoller: T
 Hovmoller anomaly diagram from *fromYear* to *toYear* per experiment, per variable. 
 ![](pics/anomalyHov_domain_salinity.png)
 
 timeseries: F
-Timeseries of anomaly from *fromYear* to *toYear* with all the expName. The plot includes monthly mean and daily mean 
+
+Timeseries of anomaly from *fromYear* to *toYear* with all the expName. The plot includes monthly mean and yearly mean 
 ![](pics/anom_bs-test-int-n4.0-bs-test-int-bdy7_salinity_50-depth_timeseries.png)
 
 maps: F
+
 Anomaly maps per year per variable per expName
 ![](pics/mapAnom_salinity_2016_0m.png)
 
 
 TS_diagram:
+
 One plot per experiment, per year and a cumulative plot  from *fromYear* to *toYear*.
 You can slice the dataset according to min/max depth 
 
-![](pics/bs-test-int-n4.0_2016_Domain_TS_mean.png)
+![](pics/bs-test-int-bdy7_2016_Domain_TS_mean.png)
+
 pointProfile:
 
 TS diagram in one point. The point is specified  in coords: [PointLon, PointLat]
@@ -91,17 +101,21 @@ yearlyMean: F
 monthlyMean: F # to be tested
 
 timeseries:
+
 argo: F
 argo2exps: F
 depthBins: F
 salinityVol: F
 domainAverage: F
+
 mld: F
+
 Mixed Layer Depth Validation vs ARGO coumputed according to density criterium.
 One plot with monthly mean of mld from all the expName and observation.
 ![](pics/2016-2017_mld_stats.png)
 
-mvr_statistics: F
+mvr_statistics: T
+
 Some plots per experiment, per variable cumulative in time from *fromYear* to *toYear* with the same statistics provided for the Monthly Validation Report
 BIAS vs ARGO
 ![](pics/bs-test-int-bdy7_2016_salinity_BIAS.png)
@@ -114,7 +128,10 @@ RMSE vs ARGO
 and also standard deviation and variance.
 
 decimation:
+
 This entry provides a dataset with reduced resolution. *decim_factor* defines how many times you want to reduce the resolution
--flag: F
+
+-flag: T 
+
 -decim_factor: 10  # Reduce resolution. N is the decimation factor
 
