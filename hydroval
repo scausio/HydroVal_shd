@@ -1,0 +1,10 @@
+import subprocess
+import os
+
+def main():
+    hv_path='/work/opa/bsfs-dev/HydroVal'
+    cmd=f"bsub -Is -P 0512 python {hv_path}/run {os.getcwd()}"
+    os.system(cmd)
+
+if __name__=="__main__":
+    main()
