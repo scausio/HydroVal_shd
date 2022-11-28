@@ -37,49 +37,49 @@ Using T and F flag you can select your jobs
 
 argo_profiles: T
 Validation vs argo putting all the expsName in one plot. One plot per year per variable, and a cumulative plot for all the years
-![](../../../Desktop/plots_main/profiles/bs-test-int-n4.0-bs-test-int-bdy7/allYears_Domain_Salinity.png)
+![](pics/bs-test-int-n4.0-bs-test-int-bdy7/allYears_Domain_Salinity.png)
 
 argo_errorEvolution: T
 Validation vs argo putting one expsName in one plot, with 1 profile RMSE per year.
-![](../../../Desktop/plots_main/profiles/bs-test-int-n4.0-bs-test-int-bdy7/errorEvolution_bs-test-int-bdy7_salinity_2016-2019.png)
+![](pics/errorEvolution_bs-test-int-bdy7_salinity_2016-2019.png)
 
 sst: T
 Validation of SST vs satellite data
 Production of a timeseries from *fromYear* to *toYear*.The plot includes monthly mean and daily mean 
-![](../../../Desktop/plots_main/SST/bs-test-int-n4.0-bs-test-int-bdy7/2016-2018_ts.png)
+![](pics/2016-2018_ts.png)
 and bias-rmse map per each expName
-![](../../../Desktop/plots_main/SST/bs-test-int-n4.0-bs-test-int-bdy7/2016-2018mean_bs-test-int-bdy7_maps.png)
+![](pics/2016-2018mean_bs-test-int-bdy7_maps.png)
 if expNames is a list of 2 experiments, the tool produces also a map of rmse difference among them
 
 sla: T
 Validation of SLA vs satellite data
 The tool produces one timeseries per year with all the experiments, and a cumulative timeseries from *fromYear* to *toYear* 
-![](../../../Desktop/plots_main/SLA/bs-test-int-n4.0-bs-test-int-bdy7/sla_rmse_2016-2018.png)
+![](pics/sla_rmse_2016-2018.png)
 
 hovmoller: T
 Hovmoller diagram from *fromYear* to *toYear* per experiment, per variable. You can decide to discard shallow waters setting a minimum depth
-![](../../../Desktop/plots_main/hovmoller/bs-test-int-bdy7/hov_domain_salinity.png)
+![](.pics/hov_domain_salinity.png)
 
 anomalies:
 The mean climatology is computed from *fromYear* to *toYear* 
 hovmoller: T
 Hovmoller anomaly diagram from *fromYear* to *toYear* per experiment, per variable. 
-![](../../../Desktop/plots_main/anomaly_hov/bs-test-int-n4.0/anomalyHov_domain_salinity.png)
+![](pics/anomalyHov_domain_salinity.png)
 
 timeseries: F
 Timeseries of anomaly from *fromYear* to *toYear* with all the expName. The plot includes monthly mean and daily mean 
-![](../../../Desktop/plots_main/anomaly_ts/bs-test-int-n4.0-bs-test-int-bdy7/anom_bs-test-int-n4.0-bs-test-int-bdy7_salinity_50-depth_timeseries.png)
+![](pics/anom_bs-test-int-n4.0-bs-test-int-bdy7_salinity_50-depth_timeseries.png)
 
 maps: F
 Anomaly maps per year per variable per expName
-![](../../../Desktop/plots_main/anomaly_maps/bs-test-int-n4.0-bs-test-int-bdy7/mapAnom_salinity_2016_0m.png)
+![](pics/mapAnom_salinity_2016_0m.png)
 
 
 TS_diagram:
 One plot per experiment, per year and a cumulative plot  from *fromYear* to *toYear*.
 You can slice the dataset according to min/max depth 
 
-![](../../../Desktop/plots_main/TS/bs-test-int-n4.0/bs-test-int-n4.0_2016_Domain_TS_mean.png)
+![](pics/bs-test-int-n4.0_2016_Domain_TS_mean.png)
 pointProfile:
 
 TS diagram in one point. The point is specified  in coords: [PointLon, PointLat]
@@ -99,18 +99,18 @@ domainAverage: F
 mld: F
 Mixed Layer Depth Validation vs ARGO coumputed according to density criterium.
 One plot with monthly mean of mld from all the expName and observation.
-![](../../../Desktop/plots/MLD_ts/bs-test-int-n4.0-bs-test-int-bdy7/2016-2017_mld_stats.png)
+![](pics/2016-2017_mld_stats.png)
 
 mvr_statistics: F
 Some plots per experiment, per variable cumulative in time from *fromYear* to *toYear* with the same statistics provided for the Monthly Validation Report
 BIAS vs ARGO
-![](../../../Desktop/plots/MVR/bs-test-int-bdy7/bs-test-int-bdy7_2016_salinity_BIAS.png)
+![](pics/bs-test-int-bdy7_2016_salinity_BIAS.png)
 Covariance vs ARGO
-![](../../../Desktop/plots/MVR/bs-test-int-bdy7/bs-test-int-bdy7_2016_salinity_cov.png)
+![](pics/bs-test-int-bdy7_2016_salinity_cov.png)
 Mean of ARGO and mean of model
-![](../../../Desktop/plots/MVR/bs-test-int-bdy7/bs-test-int-bdy7_2016_salinity_mean.png)
+![](pics/bs-test-int-bdy7_2016_salinity_mean.png)
 RMSE vs ARGO
-![](../../../Desktop/plots/MVR/bs-test-int-bdy7/bs-test-int-bdy7_2016_salinity_MSE.png)
+![](pics/bs-test-int-bdy7_2016_salinity_MSE.png)
 and also standard deviation and variance.
 
 decimation:
