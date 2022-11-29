@@ -5,9 +5,10 @@ toYear: 2017
 grids: ['T'] # list of grid to be processed ['T', 'V' , 'U']
 hvFiles_dir: '/work/opa/xxx' # output directory for intermediate files
 plot_dir: '/work/opa/xxx/plots' # output directory for plots
-pq_path: '/work/opa/sc33616/nemo/tools/bs-mfc-pq-2-refactor/runs'
 mesh_mask: '/data/opa/bs-mod/upstream_bs-nrt/baseline/geodta/meshmask_bs-nrt_fullBox.nc'
 bproject: '0512' # project code in Zeus
+pq_path: '/work/opa/sc33616/nemo/tools/bs-mfc-pq-2-refactor/runs'
+hv_path: '/work/opa/bsfs-dev/HydroVal/' # HydroVal path
 # --------------------------- JOB request ------------------------
 tasks: # please set T or F to activate/deactivate the routines
   argo_profiles: T
