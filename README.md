@@ -1,4 +1,6 @@
-This package provides validates you NEMO (and others) model run, computes climatologies, reduce model resolution WITHOUT REQUIRING ANY installation of tools, scripts, environments  and so on.
+This package helps you to validate, computing  climatologies, reducing model resolution your  NEMO (and others) model run, WITHOUT REQUIRING ANY installation of tools, scripts, environments  and so on.
+
+If you want to create and install your HydroVal version, you can download it from *https://github.com/scausio/HydroVal*.
 
 The catalog follows PQ-TOOL rules, just add '_T', '_U', '_V' to the experiment name as in the example file *catalog_hydroval.yaml*.
 
