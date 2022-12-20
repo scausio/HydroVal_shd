@@ -16,6 +16,9 @@ tasks: # please set T or F to activate/deactivate the routines
   sst: T
   sla:
   hovmoller: T
+  hovmoller_point:
+    flag: T
+    coords: [31,41.5] # Hovmoller diagram in a point (x,y)
   anomalies:
     hovmoller: T
     timeseries: F
